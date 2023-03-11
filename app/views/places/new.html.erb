@@ -3,14 +3,13 @@
 <% if @current_user %>
 <%= form_with :model => @place do |form| %>
   <p>
-    <%= form.label "name" %>
-    <%= form.text_field "name" %>
+    <%= form.label "name", class: "form-label" %>
+    <%= form.text_field "name", class: "form-control" %>
   </p>
   <p>
-    <%= form.submit %>
+    <button type="submit" class="btn btn-primary">Add a New Place</button>
   </p>
 <% end %>
 <% else %>
     Please <a href="/login" class="link-success">login</a> to post.
   <% end %>
-</body>
