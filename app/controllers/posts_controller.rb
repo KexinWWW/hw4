@@ -18,7 +18,7 @@ class PostsController < ApplicationController
     else
       flash["notice"] = "You need to login first."
     end
-    redirect_to "/places/#{@post/["place_id"]}"
+    redirect_to "/places/#{@post["place_id"]}"
   end
   
 end
